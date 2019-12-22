@@ -9,6 +9,18 @@
 <!-- 본문 -->
 <body>
   <h1><a href="index.html" style="text-decoration:none">WEB</a></h1>
+  <input id="night_day" type="button" name="" value="day" onclick="
+  if(this.value === 'day')
+  {
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'night';
+  }else{
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'day';
+  }
+  ">
   <div id="grid">
     <ol>
       <li><a href="1.html">HTML</a></li>

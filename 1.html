@@ -10,6 +10,38 @@
 <!-- 본문 -->
 <body>
   <h1><a href="index.html" style="text-decoration:none">WEB</a></h1>
+  <input id="night_day" type="button" name="" value="day" onclick="
+  var target = document.querySelector('body');
+
+  if(this.value === 'day')
+  {
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'night';
+
+    var aTagList = document.querySelectorAll('a');
+    var idx = 0;
+    while(idx < aTagList.length)
+    {
+      aTagList[idx].style.color = 'powderblue';
+      idx = idx +1;
+    }
+
+  }else{
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'day';
+
+    var aTagList = document.querySelectorAll('a');
+    var idx = 0;
+    while(idx < aTagList.length)
+    {
+      aTagList[idx].style.color = 'black';
+      idx = idx +1;
+    }
+
+  }
+  ">
   <div id="grid">
       <ol>
         <li><a href="1.html">HTML</a></li>
@@ -23,7 +55,6 @@
           <img src="https://junkyucho0114.github.io/web1/quakka.png" width="50%">
           <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
       </div>
-
   </div>
 </body>
 </html>

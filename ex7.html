@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>반복문</title>
+  </head>
+  <body>
+    <h1>Loop</h1>
+    <ul>
+      <li><a href="1.html">a</a></li>
+      <li><a href="2.html">b</a></li>
+      <li><a href="3.html">c</a></li>
+      <li><a href="4.html">d</a></li>
+      <script type="text/javascript">
+        var idx = 0;
+        var aTagList = document.querySelectorAll('a');
+
+        while(idx < aTagList.length)
+        {
+
+          document.write(aTagList[idx].text);
+          aTagList[idx].color = 'green';
+          document.write('\n');
+          idx++;
+        }
+      </script>
+    </ul>
+
+  </body>
+</html>

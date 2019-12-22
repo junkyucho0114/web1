@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>반복문과 배열</title>
+  </head>
+  <body>
+    <h1>반복문과 배열</h1>
+    <h2>포켓몬</h2>
+    <ul>
+      <!--
+      <li>피카츄</li>
+      <li>라이츄</li>
+      <li>파이리</li>
+      <li>꼬부기</li>
+      <li>버터플</li>
+      -->
+      <script type="text/javascript">
+        var pokemonList = ['피카츄', '라이츄', '파이리', '꼬부기', '버터플'];
+        var idx = 0;
+
+        while(idx < pokemonList.length)
+        {
+            var pokemon = pokemonList[idx];
+            document.write('<li>' + pokemon + '</li>');
+            idx = idx + 1;
+        }
+
+      </script>
+    </ul>
+  </body>
+</html>
